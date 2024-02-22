@@ -145,3 +145,15 @@ if (!function_exists('html_to_string')) {
         return strip_tags($handle2);                    //函数剥去字符串中的 HTML、XML 以及 PHP 的标签,获取纯文本内容
     }
 }
+
+if (!function_exists('sql_record')) {
+    /**
+     * 获取 sql 执行记录
+     *
+     * @return array
+     */
+    function sql_record()
+    {
+        return \Slowlyo\Support\SqlRecord::$sql;
+    }
+}

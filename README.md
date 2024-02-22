@@ -20,32 +20,25 @@ composer require slowlyo/laravel-support
 ```php
 // functions start
 
-// 获取当前域名
-function domain()
+// 获取当前域名function domain()
 
-// 可以传入 0 的 bcdiv
-function safe_bc_dev($dividend, $divisor, $scale = 2)
+// 可以传入 0 的 bcdivfunction safe_bc_dev($dividend, $divisor, $scale = 2)
 
-// 计算数组的和
-function bc_array_sum($array, $scale = 2)
+// 计算数组的和function bc_array_sum($array, $scale = 2)
 
-// 可传入数组的 explode
-function safe_explode($delimiter, $string)
+// 可传入数组的 explodefunction safe_explode($delimiter, $string)
 
-// 返回前后拼接了 % 的字符串
-function like($str)
+// 返回前后拼接了 % 的字符串function like($str)
 
-// 是否是json字符串
-function is_json($string)
+// 是否是json字符串function is_json($string)
 
-// 获取表字段
-function table_columns($tableName)
+// 获取表字段function table_columns($tableName)
 
-// 一行行读取文件
-function file_to_line($path)
+// 一行行读取文件function file_to_line($path)
 
-// html 转 string
-function html_to_string($content)
+// html 转 stringfunction html_to_string($content)
+
+// 获取 sql 执行记录function sql_record()
 
 // functions end
 ```
