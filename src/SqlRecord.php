@@ -19,7 +19,7 @@ class SqlRecord
                 $sql   = preg_replace('/\?/', $value, $sql, 1);
             }
 
-            $sql = $sql . '    ' . $query->time . 'ms';
+            $sql = sprintf('[%s ms] %s', $query->time, $sql);
 
             self::$sql[] = $sql;
         });
