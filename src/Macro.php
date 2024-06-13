@@ -10,7 +10,7 @@ class Macro
     {
         // findInSet
         Builder::macro('findInSet', function ($column, $value) {
-            return $this->whereRaw('FIND_IN_SET(?, ?)', [$value, $column]);
+            return $this->whereRaw("FIND_IN_SET(?, $column)", [$value]);
         });
 
         // toRawSql
