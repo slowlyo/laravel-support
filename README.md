@@ -40,5 +40,7 @@ composer require slowlyo/laravel-support
 
 // 获取 sql 执行记录function sql_record()
 
+// 创建目录function make_dir($path, $mode = 0777, $recursive = true, $context = null)
+
 // functions end
 ```

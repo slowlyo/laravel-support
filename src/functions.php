@@ -157,3 +157,22 @@ if (!function_exists('sql_record')) {
         return \Slowlyo\Support\SqlRecord::$sql;
     }
 }
+
+if (!function_exists('make_dir')) {
+    /**
+     * 创建目录
+     *
+     * @param $path
+     * @param $mode
+     * @param $recursive
+     * @param $context
+     *
+     * @return void
+     */
+    function make_dir($path, $mode = 0777, $recursive = true, $context = null)
+    {
+        if (!is_dir($path)) {
+            @mkdir($path, $mode, $recursive, $context);
+        }
+    }
+}

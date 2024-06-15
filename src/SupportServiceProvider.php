@@ -11,7 +11,9 @@ class SupportServiceProvider extends ServiceProvider
         // 注入宏
         Macro::handle();
 
-        // 记录 sql
-        SqlRecord::listen();
+        if (config('app.debug')) {
+            // 记录 sql
+            SqlRecord::listen();
+        }
     }
 }
