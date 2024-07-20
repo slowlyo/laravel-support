@@ -12,7 +12,7 @@ if (!function_exists('domain')) {
     }
 }
 
-if (!function_exists('safe_bc_dev')) {
+if (!function_exists('safe_bc_div')) {
     /**
      * 可以传入 0 的 bcdiv
      *
@@ -22,7 +22,7 @@ if (!function_exists('safe_bc_dev')) {
      *
      * @return int|string|null
      */
-    function safe_bc_dev($dividend, $divisor, $scale = 2)
+    function safe_bc_div($dividend, $divisor, $scale = 2)
     {
         if (!$dividend || !$divisor) {
             return 0;
