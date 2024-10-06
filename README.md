@@ -17,6 +17,8 @@ composer require slowlyo/laravel-support
 
 ## trait
 
+- MakeTrait
+    - 更方便的调用非静态方法
 - MysqlLoadDataTrait
     - 使用 mysql 的 load data 语句批量插入数据
 
