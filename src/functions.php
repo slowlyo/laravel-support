@@ -24,9 +24,7 @@ if (!function_exists('safe_bc_div')) {
      */
     function safe_bc_div($dividend, $divisor, $scale = 2)
     {
-        if (!$dividend || !$divisor) {
-            return 0;
-        }
+        if (!$dividend || !$divisor || bcmul($dividend, $divisor) == 0) return 0;
 
         return bcdiv($dividend, $divisor, $scale);
     }
